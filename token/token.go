@@ -3,10 +3,22 @@ package token
 type TokenType string
 
 const (
-	ILLEGAL   = "ILLEGAL"
-	EOF       = "EOF"
-	ASSIGN    = "="
-	PLUS      = "+"
+	IDENT   = "IDENT"
+	ILLEGAL = "ILLEGAL"
+	EOF     = "EOF"
+
+	// Keywords
+	LET      = "LET"
+	FUNCTION = "FUNCTION"
+
+	// Literals
+	INT = "INT"
+
+	// Operators
+	ASSIGN = "="
+	PLUS   = "+"
+
+	// Separators
 	LPAREN    = "("
 	RPAREN    = ")"
 	LBRACE    = "{"
